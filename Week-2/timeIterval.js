@@ -8,5 +8,3 @@ const timer = setInterval(() => {
         console.log("Resend OTP");
     }
 }, 1000);
-
-
