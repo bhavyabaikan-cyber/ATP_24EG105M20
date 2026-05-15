@@ -7,7 +7,7 @@ function Home() {
       <div className="max-w-3xl mx-auto">
         
         {/* Title */}
-        <h2 className="text-center text-4xl font-semi-bold text-red-900 mb-10">
+        <h2 className="text-center text-4xl font-semi-bold text-black-900 mb-10">
           WELCOME TO EMPLOYEE MANAGEMENT SYSTEM
         </h2>
 
@@ -24,17 +24,17 @@ function Home() {
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
           
           <div className="bg-red-100 p-5 rounded-lg border-0">
-            <h3 className="font-semibold text-red-800 mb-1">Add</h3>
+            <h3 className="font-semibold text-black-800 mb-1">Add</h3>
             <p className="text-sm text-gray-700">New Employees</p>
           </div>
 
-          <div className="bg-red-100 p-5 rounded-lg border-0">
-            <h3 className="font-semibold text-pink-800 mb-1">Manage</h3>
+          <div className="bg-amber-50-100 p-5 rounded-lg border-0">
+            <h3 className="font-semibold text-black-800 mb-1">Manage</h3>
             <p className="text-sm text-gray-700">Update Data</p>
           </div>
 
-          <div className="bg-red-100 p-5 rounded-lg border-0">
-            <h3 className="font-semibold text-pink-700 mb-1">Delete</h3> 
+          <div className="bg-amber-200-100 p-5 rounded-lg border-0">
+            <h3 className="font-semibold text-black-700 mb-1">Delete</h3> 
             <p className="text-sm text-gray-700">Remove Records</p>
           </div>
 
