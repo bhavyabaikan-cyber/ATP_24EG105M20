@@ -4,7 +4,7 @@
 
 A secure, role-based web application for managing employee records, attendance, leave requests, and departmental workflows. Built with the MERN stack for scalability, real-time updates, and seamless HR operations.
 
-## 🚀 Tech Stack
+## Tech Stack
 | Layer       | Technologies                                  |
 |-------------|-----------------------------------------------|
 | Frontend    | React 19, Vite, Tailwind CSS, Zustand, Axios  |
@@ -14,15 +14,15 @@ A secure, role-based web application for managing employee records, attendance, 
 | Deployment  | Vercel (Frontend), Render (Backend), MongoDB Atlas |
 
 ## ✨ Features
-- 🔐 **Role-Based Access Control** (Admin, HR, Employee)
-- 👥 **Employee CRUD** – Onboard, update, archive, or delete records
-- 📅 **Leave & Attendance** – Apply, approve/reject, track daily logs
-- 📄 **Document Management** – Secure upload & verification (ID, contracts)
-- 📊 **HR Dashboard** – Analytics, department stats, pending requests
-- 📧 **Email Alerts** – Leave status, onboarding, policy updates
-- 🔍 **Search & Filter** – By department, role, status, or name
+-  **Role-Based Access Control** (Admin, HR, Employee)
+-  **Employee CRUD** – Onboard, update, archive, or delete records
+-  **Leave & Attendance** – Apply, approve/reject, track daily logs
+-  **Document Management** – Secure upload & verification (ID, contracts)
+-  **HR Dashboard** – Analytics, department stats, pending requests
+- **Email Alerts** – Leave status, onboarding, policy updates
+-  **Search & Filter** – By department, role, status, or name
 
-## 📂 Project Structure
+##  Project Structure
 
 employee-management-app/
 ├── frontend/ # React SPA (Vite + Tailwind)

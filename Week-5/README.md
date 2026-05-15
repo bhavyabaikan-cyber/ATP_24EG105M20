@@ -6,7 +6,7 @@
 - [ ] Style tables with CSS (`border-collapse`, `padding`, `text-align`, `margin`)
 - [ ] Link external CSS correctly to HTML
 
-## 📁 Files Included
+##  Files Included
 | File | Purpose |
 |------|---------|
 | `01-basic-colspan-table.html` + `.css` | Simple table with `colspan` headers & subtitles |
@@ -26,7 +26,7 @@ start 02-grades-rowspan-table.html
 - [ ] Style reusable card components with shadows, borders, and rounded images
 - [ ] Link external CSS correctly and manage static assets (`./assets/`)
 
-## 📁 Files Included
+##  Files Included
 | File | Purpose |
 |------|---------|
 | `01-basic-colspan-table.html` + `.css` | Simple table with `colspan` headers & subtitles |
