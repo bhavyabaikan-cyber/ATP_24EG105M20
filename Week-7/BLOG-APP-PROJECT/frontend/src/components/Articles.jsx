@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { API_BASE_URL } from "../apiUrl";
 import axios from "axios";
 import { useNavigate } from "react-router";
 
@@ -39,7 +40,7 @@ function Articles() {
       setError(null);
 
       try {
-        const res = await axios.get("http://localhost:5000/user-api/articles", {
+        const res = await axios.get(`${API_BASE_URL}/user-api/articles`, {
           withCredentials: true,
         });
 

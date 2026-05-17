@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 import {toast} from 'react-hot-toast'
 import { useNavigate } from "react-router";
+import { API_BASE_URL } from "../apiUrl";
 
 import {
   formCard,
@@ -38,7 +39,7 @@ function WriteArticles() {
       //set loading true
       setLoading(true);
       //make POST req to save new article
-      let res = await axios.post("http://localhost:5000/author-api/article", articleObj, { withCredentials: true });
+      let res = await axios.post(`${API_BASE_URL}/author-api/article`, articleObj, { withCredentials: true });
       //navigate to AuthorArticles
       if (res.status === 201) {
         toast.success("Article published successfully")

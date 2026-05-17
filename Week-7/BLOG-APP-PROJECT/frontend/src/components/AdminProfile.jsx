@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router";
 import { useAuth } from "../store/authStore";
-
+import { API_BASE_URL } from "../apiUrl"; //  Added this import
 import {
   loadingClass,
   errorClass,
@@ -24,7 +24,8 @@ export default function AdminProfile() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API = "http://localhost:5000/admin-api";
+  //  Fixed missing backticks here
+  const API = `${API_BASE_URL}/admin-api`;
 
   const getAdminData = async () => {
     setLoading(true);

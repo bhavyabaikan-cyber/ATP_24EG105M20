@@ -1,6 +1,7 @@
 import { useParams, useLocation, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { API_BASE_URL } from "../apiUrl";
 import { useAuth } from "../store/authStore";
 import {
   articlePageWrapper,
@@ -50,7 +51,7 @@ function ArticleByID() {
       setLoading(true);
 
       try {
-        const res = await axios.get(`http://localhost:5000/user-api/article/${id}`, { withCredentials: true });
+        const res = await axios.get(`${API_BASE_URL}/user-api/article/${id}`, { withCredentials: true });
 
         setArticle(res.data.payload);
       } catch (err) {
@@ -80,7 +81,7 @@ function ArticleByID() {
 
     try {
       const res = await axios.patch(
-        "http://localhost:5000/author-api/articles",
+        `${API_BASE_URL}/author-api/articles`,
         { articleId: article._id, isArticleActive: newStatus },
         { withCredentials: true },
       );
@@ -113,7 +114,7 @@ const addComment = async (commentObj) => {
   try {
     // ✅ Correct URL: includes articleId and /comments
     const res = await axios.put(
-      `http://localhost:5000/user-api/articles/${article._id}/comments`, 
+      `${API_BASE_URL}/user-api/articles/${article._id}/comments`, 
       { comment: commentObj.comment },  // ✅ Send only { comment: "text" }
       { withCredentials: true }
     );
